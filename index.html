@@ -14,41 +14,47 @@
 
 <body>
     <header class="container">
-        <div class="">
-            <div class="">
-                <img src="img/assets/icons/logo-sm.svg" alt="Logo Ibiza" />
+        <div class="header__bar">
+            <div class="header__logo"></div>
+
+            <!--Boton para la apertura de mi menu toggle-->
+            <input type="checkbox" name="menu__toggle" id="menu__toggle" class="menu__toggle_checkbox">
+            <label for="menu__toggle" class="menu__toggle">
+                <img class="menu__img" src="img/assets/icons/bars.svg" alt="Bars">
+            </label>
+
+            <!--Menu Toggle escondido por default-->
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="nav__links">
+                        <li class="nav__link">
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/historia.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/sabores.html">Sabores</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/locales.html">Nuestros Locales</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Fin del contenedor del Nav-->
+                <section class="menu__social">
+                    <a href="">FB</a>
+                    <a href="">IG</a>
+                    <a href="">G</a>
+                    <a href="">Email</a>
+                    <a href="">PY</a>
+                </section>
             </div>
-            <img src="img/assets/icons/bars.svg" alt="">
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="pages/historia.html">Nuestra historia</a>
-                    </li>
-                    <li>
-                        <a href="#">Sabores</a>
-                    </li>
-                    <li>
-                        <a href="pages/locales.html">Nuestros Locales</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-            <!--Fin del contenedor del Nav-->
-            <section>
-                <a href="">FB</a>
-                <a href="">IG</a>
-                <a href="">G</a>
-                <a href="">Email</a>
-                <a href="">PY</a>
-            </section>
         </div>
         <section class="hero-banner contenedor-flex flex-around">
-            <h1 class="main-title hidden">Ibiza</h1>
             <img src="img/assets/icons/logo.svg" alt="Logo Ibiza">
             <div class="descripcion opacity-80 contenedor-flex flex-center">
                 <p class="titulo">
