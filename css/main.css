@@ -1,0 +1,347 @@
+/*-----------Reseteo CSS básico------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background: #fc997c;
+}
+
+html {
+    font-size: 64.5%;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #2e4c6d;
+}
+
+img {
+    width: 100%;
+}
+
+svg {
+    fill: #2e4c6d;
+}
+
+a,
+li {
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+video {
+    width: 400px;
+    height: 400px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon {
+    fill: #2e4c6d;
+}
+
+.social-icon-white {
+    fill: white;
+}
+
+/*------------Container principal ----------*/
+.web-header .contenedor-flex {
+    padding: 1.8rem 3.6rem;
+}
+
+/*--------------Utilidades Flex--------------*/
+
+.contenedor-flex {
+    display: flex;
+}
+
+.flex-center,
+.flex-evenly,
+.flex-between,
+.flex-around {
+    align-items: center;
+}
+.flex-center {
+    justify-content: center;
+}
+
+.flex-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+/*--------------Nav--------------*/
+
+.web-header {
+    font-size: 1.6rem;
+}
+
+.web-header .logo-isologo {
+    width: 60px;
+}
+
+.nav-top .contenedor-flex {
+    /*Esta propiedad es actualmente utilizada tambien en Flexbox*/
+    gap: 2.4rem;
+    flex-wrap: wrap;
+}
+
+.primary-link {
+    background-color: #daddfc;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+}
+
+.primary-link:hover {
+    background-color: #fc997c;
+    color: white;
+    border-radius: 50px;
+}
+
+.redes a {
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.redes a:hover svg {
+    fill: #fc997c;
+}
+
+/*------------Hero Header----------------*/
+
+.hidden {
+    display: none;
+}
+
+header .hero-banner {
+    background-image: url("../img/assets/back-white.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.titulo-bold {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #2e4c6d;
+    display: inline-block;
+}
+
+.hero-logo {
+    width: 470px;
+    height: 290px;
+}
+
+.titulo {
+    font-size: 3.2rem;
+    color: #2e4c6d;
+    opacity: 100%;
+}
+.hero-banner .descripcion {
+    width: 600px;
+    background-color: #daddfc;
+    height: 200px;
+    text-align: right;
+    border-radius: 8px;
+}
+
+/*--------------Index Gallery-----------*/
+
+.index-gallery {
+    margin: 3.6rem auto;
+}
+
+.index-gallery img {
+    height: 100%;
+    width: auto;
+}
+
+.box {
+    width: 180px;
+    height: 500px;
+    overflow: hidden;
+}
+
+/*-------Index Card Section-------------*/
+
+.txt-normal {
+    font-size: 1.6rem;
+    color: #2e4c6d;
+}
+
+.txt-normal-bold {
+    font-size: 1.6rem;
+    color: #2e4c6d;
+    font-weight: 700;
+}
+
+.card-ibiza {
+    width: 80%;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.card-ibiza img {
+    width: 500px;
+}
+
+.card-info {
+    background-color: #daddfc;
+    height: 100%;
+    width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+/*Footer ------ Promo section*/
+
+.promo-img {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    margin-top: 3.6rem;
+}
+
+footer .titulo {
+    text-align: left;
+}
+
+footer .hero-banner {
+    padding: 1.8rem 3.6rem;
+    background-image: url("../img/assets/back-grey.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+footer section .descripcion {
+    padding: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3.6rem;
+    background-color: #2e4c6d;
+    color: white;
+    height: 160px;
+}
+
+.footer-links ul {
+    gap: 2.4rem;
+}
+.footer-links ul li a {
+    font-size: 1.6rem;
+}
+
+.footer-links ul li:hover a {
+    color: #fc997c;
+}
+
+/* Pagina Contacto*/
+
+.seccion-contacto {
+    flex-direction: column;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 850px;
+    height: 400px;
+}
+
+.seccion-contacto .titulo {
+    margin-bottom: 1.6rem;
+}
+
+.seccion-historia {
+    margin: 0 auto;
+    width: 850px;
+}
+
+.seccion-historia,
+.seccion-locales,
+.seccion-sabores {
+    gap: 2.4rem;
+}
+
+.seccion-locales {
+    flex-direction: column;
+}
+
+.locales-cards {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+}
+
+.local {
+    width: 400px;
+    background-color: #daddfc;
+    padding: 2rem;
+}
+.local-info {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gustos-cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px;
+    gap: 2.4rem;
+}
+
+.seccion-sabores {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.gusto {
+    width: 350px;
+    height: 100px;
+    position: relative;
+    
+}
+
+.gusto h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
