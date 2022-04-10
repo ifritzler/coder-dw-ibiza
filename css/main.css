@@ -57,12 +57,13 @@ header {
 header nav, .menu_bar {
     position: fixed;
     width: 100%;
-    height: 80px;
     z-index: 10;
 }
 
 header nav {
     top: 80px;
+    background-color: var(--lightblue-ibiza);
+    height: auto;
 }
 
 header nav ul {
@@ -100,6 +101,7 @@ header nav ul li:active {
 
 .menu_bar{
     display: flex;
+    height: 80px;
     padding: 1rem;
     position: fixed;
     justify-content: space-between;
@@ -125,4 +127,23 @@ header nav ul li:active {
 
 .menu_bar img{
     height: 55px;
+}
+
+/*Menu toggle redes*/
+
+header nav .redes {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav .redes a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+
+header nav .redes a img{
+    width: 100%;
 }
