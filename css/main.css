@@ -116,6 +116,17 @@ video {
     width: 60px;
 }
 
+.menu-icon {
+    display: none;
+    width: 55px;
+    height: 55px;
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #daddfc;
+}
+
 .nav-top .contenedor-flex {
     /*Esta propiedad es actualmente utilizada tambien en Flexbox*/
     gap: 2.4rem;
@@ -463,4 +474,50 @@ footer section .descripcion {
         width: 90%;
         height: auto;
     }
+}
+
+@media(max-width: 375px) {
+
+    .web-header .contenedor-flex {
+        padding: 1.8rem 3.6rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-top, .redes {
+        display: none;
+    }
+
+
+    .card-info {
+        height: auto;
+    }
+
+    /* Promos*/
+
+    footer .hero-banner {
+        padding: 0;
+        background-image: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    footer .redes {
+        display: block;
+    }
+    .footer-links {
+        height: auto;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
 }
