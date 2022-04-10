@@ -520,4 +520,24 @@ footer section .descripcion {
         margin-bottom: 2rem;
     }
 
+    .hero-banner .descripcion {
+        text-align: left;
+    }
+
+    /* Sabores Pagina*/
+
+    .gustos-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .gustos-cards .gusto {
+        width: 100%;
+        height: auto;
+    }
 }
