@@ -1,0 +1,29 @@
+:root {
+    --blue-ibiza: #2E4C6D;
+    --orange-acent: #FC997C;
+    --blue-ibiza-light: #396EB0;
+    --lightblue-ibiza: #DADDFC;
+
+    --fs-title-desktop: 3.2rem;
+    --fs-title-mobile: 2.4rem;
+    --fs-subtitle-desktop: 2.4rem;
+    --fs-subtitle-mobile: 2rem;
+    --fs-regular: 1.6rem;
+    --line-height: 1.5;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 64.5%;
+}
+
+body {
+    font-size: var(--fs-regular);
+    width: 100%;
+}
