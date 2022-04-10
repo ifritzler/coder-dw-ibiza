@@ -19,6 +19,25 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     color: #2e4c6d;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main-content"
+    "footer";
+}
+
+body header {
+    grid-area: header;
+}
+
+body main {
+    grid-area: main-content;
+}
+
+body footer {
+    grid-area: footer;
 }
 
 img {
@@ -161,9 +180,8 @@ header .hero-banner {
     opacity: 100%;
 }
 .hero-banner .descripcion {
-    width: 600px;
+    max-width: 600px;
     background-color: #daddfc;
-    height: 200px;
     text-align: right;
     border-radius: 8px;
 }
@@ -172,6 +190,7 @@ header .hero-banner {
 
 .index-gallery {
     margin: 3.6rem auto;
+    max-width: 90%;
 }
 
 .index-gallery img {
@@ -222,7 +241,6 @@ header .hero-banner {
 
 .promo-img {
     width: 300px;
-    height: 300px;
 }
 
 footer {
@@ -242,6 +260,7 @@ footer .hero-banner {
     background-size: cover;
     height: 400px;
     width: 100%;
+    justify-content: center;
 }
 
 footer section .descripcion {
@@ -344,4 +363,104 @@ footer section .descripcion {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+/*
+    Media querys para diseño responsive
+*/
+
+@media(max-width: 768px) {
+    .hero-logo {
+        display: none;
+    }
+
+    .web-header .contenedor-flex {
+        padding: 1.8rem 3.6rem;
+    }
+
+    /*Gallery*/
+    .index-gallery {
+        margin: 3.6rem auto;
+    }
+    
+    .index-gallery img {
+        height: 100%;
+        width: auto;
+    }
+    
+    .index-gallery .box:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
+    }
+    .index-gallery .box:nth-of-type(1) img {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .index-gallery .box:nth-of-type(2),
+    .index-gallery .box:nth-of-type(3),
+    .index-gallery .box:nth-of-type(4),
+    .index-gallery .box:nth-of-type(5),
+    .index-gallery .box:nth-of-type(6) {
+        display: none;
+    }
+
+    .card-ibiza {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-ibiza img {
+        width: 100%;
+    }
+
+    .card-info {
+        width: auto;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-info p {
+        width: 70%;
+        line-height: 2.0;
+    }
+
+    .card-info .txt-normal  {
+        font-size: 2.2rem;
+        color: rgb(46, 76, 109);
+    }
+
+    .txt-normal-bold {
+        font-size: inherit;
+    }
+
+
+    /* Promos*/
+
+    footer .hero-banner {
+        padding: 1.8rem 3.6rem;
+        background-image: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+
+
+    
+    footer .hero-banner .descripcion {
+        height: 300px;
+        max-width: 90%;
+    }
+
+    .promo-img {
+        width: 90%;
+        height: auto;
+    }
 }
