@@ -1,9 +1,11 @@
 :root {
+    /* paleta de colores*/
     --blue-ibiza: #2E4C6D;
     --orange-acent: #FC997C;
     --blue-ibiza-light: #396EB0;
     --lightblue-ibiza: #DADDFC;
 
+    /* medidas de textos*/
     --fs-title-desktop: 3.2rem;
     --fs-title-mobile: 2.4rem;
     --fs-subtitle-desktop: 2.4rem;
@@ -11,19 +13,116 @@
     --fs-regular: 1.6rem;
     --line-height: 1.5;
 
+    --semi-bold: 600;
+    --bold: 700;
+    --light: 300;
+    --regular: 400;
 }
 
+/* reseteo de margenes y padding*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*este reseteo es para que cada rem valga 10px */
 html {
     font-size: 64.5%;
 }
 
+/* el body no se expandira mas alla del 100% del viewport */
 body {
     font-size: var(--fs-regular);
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
+}
+
+/* estilos generales para list items con links */
+li {
+    list-style: none;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header { 
+    position: relative;
+}
+
+/* Estilos para la barra de navegación*/
+header nav, .menu_bar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
+
+header nav {
+    top: 80px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-ibiza);
+    font-weight: var(--semi-bold);
+}
+
+header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    border-bottom: 1px solid #396fb033;
+}
+
+header nav ul li a{
+    /* Hace que el click en mobile sea mas comodo 
+    pudiendole dar un 'toque' en cualquier parte del box 
+    que contiene el link*/
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+}
+
+header nav ul li:active {
+    color: white;
+    background-color: var(--orange-acent);
+}
+
+.menu_bar{
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.menu_ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    padding: 1.3rem;
+    background-color: var(--lightblue-ibiza);
+    border-radius: 50%;
+}
+
+.menu_bar img{
+    width: 100%;
+}
+
+.menu_bar img{
+    height: 55px;
 }
