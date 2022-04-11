@@ -43,6 +43,9 @@ li a {
     text-decoration: none;
     cursor: pointer;
 }
+.text-bold {
+    font-weight: var(--bold);
+}
 /* este es el input que controla la aparicion del menu. siempre esta escondido del flujo*/
 #menu {
     display: none;
@@ -153,9 +156,6 @@ header nav .redes a img {
 /*###################################################*/
 /*#################____Banner_____###################*/
 
-.text-bold {
-    font-weight: var(--bold);
-}
 .banner {
     background-image: url(../img/assets/back-white.png);
     background-attachment: fixed;
@@ -174,4 +174,27 @@ header nav .redes a img {
 tendra el background que le corresponde*/
 .banner.blue {
     background-image: url(../img/assets/back.png);
+}
+
+/*###################################################*/
+/*#################____Galeria_____###################*/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto 0;
+}
+
+.gallery_item img{
+    width: 100%;
+}
+
+.gallery_img:nth-last-of-type(2),
+.gallery_img:nth-last-of-type(3),
+.gallery_img:nth-last-of-type(4),
+.gallery_img:nth-last-of-type(5),
+.gallery_img:nth-last-of-type(6){
+    display: none;
 }
