@@ -6,8 +6,8 @@
     --lightblue-ibiza: #DADDFC;
 
     /* medidas de textos*/
-    --fs-title-desktop: 3.2rem;
-    --fs-title-mobile: 2.4rem;
+    --fs-title-desktop: 3.7rem;
+    --fs-title-mobile: 3.1rem;
     --fs-subtitle-desktop: 2.4rem;
     --fs-subtitle-mobile: 2rem;
     --fs-regular: 1.6rem;
@@ -147,4 +147,29 @@ header nav .redes a img {
 }
 [type=checkbox]:checked~.menu {
     transform: translate(0, 0);
+}
+
+
+/*###################################################*/
+/*#################____Banner_____###################*/
+
+.text-bold {
+    font-weight: var(--bold);
+}
+.banner {
+    background-image: url(../img/assets/back-white.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 3rem 0;
+}
+.banner_box{
+    color: var(--blue-ibiza-light);
+    font-size: var(--fs-title-mobile);
+    text-align: right;
+    background-color: var(--lightblue-ibiza);
+    padding: 3rem;
+    opacity: .95;
+}
+.banner.blue {
+    background-image: url(../img/assets/back.png);
 }
