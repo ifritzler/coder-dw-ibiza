@@ -8,8 +8,8 @@
     /* medidas de textos*/
     --fs-title-desktop: 3.7rem;
     --fs-title-mobile: 3.1rem;
-    --fs-subtitle-desktop: 2.4rem;
-    --fs-subtitle-mobile: 2rem;
+    --fs-subtitle-desktop: 3.1rem;
+    --fs-subtitle-mobile: 2.7rem;
     --fs-regular: 1.6rem;
     --line-height: 1.5;
 
@@ -34,6 +34,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     line-height: 1.5;
+    margin-top: 80px;
 }
 /* estilos generales para list items con links */
 li {
@@ -62,7 +63,7 @@ flujo del contenido principal y dejar huecos. Comienza escondido 1000px
 por encima de la vista.
 */
 header nav {
-    position: absolute;
+    position: fixed;
     top: 80px;
     background-color: var(--lightblue-ibiza);
     height: auto;
@@ -108,7 +109,8 @@ header nav ul li:active {
     align-items: center;
     height: 80px;
     padding: 1rem;
-    position: relative;
+    position: fixed;
+    background-color: white;
     top: 0;
     left: 0;
     border-bottom: 1px solid var(--lightblue-ibiza);
@@ -207,16 +209,36 @@ tendra el background que le corresponde*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 700px;
+    min-width: minmax(900px, 100%);
+    margin: 0 auto;
 }
 .box-info {
     background-color: var(--lightblue-ibiza);
     padding: 3rem;
-    border-radius: .8rem;
+    border-radius: 2rem 2rem 0 0;
     color: var(--blue-ibiza-light);
 }
-
 .box-img img {
+    border-radius: 0 0 2rem 2rem;
     width: 100%;
+}
+
+/*###################################################*/
+/*#################____Promos_____###################*/
+
+.promos .banner_box {
+    opacity: 1;
+    text-align: left;
+    border-radius: 2rem;
+    font-size: var(--fs-subtitle-mobile);
+}
+
+.promo img{
+    width: 100%;
+}
+
+.promos .banner {
+    background-attachment: unset;
+    padding: 3rem;
 }
 
