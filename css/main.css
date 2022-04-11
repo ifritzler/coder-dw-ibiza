@@ -170,6 +170,8 @@ header nav .redes a img {
     padding: 3rem;
     opacity: .95;
 }
+/*Si al banner se le agrega la clase ".blue" 
+tendra el background que le corresponde*/
 .banner.blue {
     background-image: url(../img/assets/back.png);
 }
