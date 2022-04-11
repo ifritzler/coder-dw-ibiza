@@ -60,12 +60,13 @@ header {
 /* Estilos para la barra de navegación mobile*/
 header nav,
 .menu_bar {
-    position: fixed;
+
     width: 100%;
     z-index: 10;
 }
 
 header nav {
+    position: absolute;
     top: 80px;
     background-color: var(--lightblue-ibiza);
     height: auto;
@@ -109,7 +110,7 @@ header nav ul li:active {
     display: flex;
     height: 80px;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     top: 0;
@@ -155,8 +156,9 @@ header nav .redes a img {
     width: 100%;
 }
 
-[type=checkbox]:checked~menu_bar {
+[type=checkbox]:checked~ .menu_bar {
     background-color: var(--lightblue-ibiza);
+    position: fixed;
 }
 
 [type=checkbox]:checked~.menu {
