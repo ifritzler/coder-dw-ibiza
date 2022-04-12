@@ -39,7 +39,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     line-height: 1.5;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
 }
+
+body header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+body footer {
+    grid-area: footer;
+}
+
 img {
     width: 100%;
 }
