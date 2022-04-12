@@ -14,42 +14,22 @@
 
 <body>
     <header>
-        <input type="checkbox" name="menu" id="menu">
-        <div class="menu_bar">
-            <div class="nav__logo">
-                <img src="img/assets/icons/logo.svg" alt="Logo Ibiza">
-            </div>
-            <label for="menu">
-                <div class="menu_ball">
-                    <img src="img/assets/icons/menu.svg" alt="Menu">
-                </div>
-            </label>
-        </div>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Inico</a></li>
-                <li><a href="pages/historia.html">Nuestra historia</a></li>
+            <input type="checkbox" name="menu__checkbox" id="menu__checkbox">
+            <label for="menu__checkbox" class="menu__toggle">
+                <img src="img/assets/icons/menu.svg" class="menu__toggle--open">
+                <img src="img/assets/icons/menu_close.svg" class="menu__toggle--close">
+            </label>
+            <ul class="nav__menu">
+                <li class="nav__logo">
+                    <img src="img/assets/icons/logo.svg" alt="">
+                </li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pages/historia.html">Nuestra Historia</a></li>
                 <li><a href="pages/sabores.html">Sabores</a></li>
-                <li><a href="pages/locales.html">Nuestros locales</a></li>
+                <li><a href="pages/locales.html">Locales</a></li>
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-            <div class="redes">
-                <a href="">
-                    <img src="img/assets/icons/bxl-instagram.svg" alt="Instagram">
-                </a>
-                <a href="">
-                    <img src="img/assets/icons/bxl-facebook.svg" alt="Facebook">
-                </a>
-                <a href="">
-                    <img src="img/assets/icons/bxl-google.svg" alt="Google">
-                </a>
-                <a href="">
-                    <img src="img/assets/icons/bx-envelope.svg" alt="Email">
-                </a>
-                <a href="">
-                    <img src="img/assets/icons/bx-package.svg" alt="Pedidos Ya">
-                </a>
-            </div>
         </nav>
     </header>
     <main>
@@ -78,7 +58,8 @@
         </section>
         <section class="promos">
             <div class="banner_box">
-                <p>Conoce las <span class="text-bold">las promociones</span> que preparamos <span class="text-bold">para vos</span>.</p>
+                <p>Conoce las <span class="text-bold">las promociones</span> que preparamos <span class="text-bold">para
+                        vos</span>.</p>
             </div>
             <div class="banner">
                 <div class="promo">
