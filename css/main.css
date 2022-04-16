@@ -61,7 +61,9 @@ body footer {
 img {
     width: 100%;
 }
-
+.text-bold {
+    font-weight: bold;
+}
 /*###################################################*/
 /*#################____Menu_____###################*/
 
@@ -382,4 +384,28 @@ body footer {
 }
 .sabores__gusto:nth-of-type(14){
     background-image: url(../img/assets/gustos/vainilla.jpg);
+}
+
+/*#################################*/
+/*##########__HISTORIA__###########*/
+
+.historia,
+.historia article {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    line-height: 1.5;
+    flex-direction: column;
+}
+.historia video {
+    width: 100%;
+}
+.historia p {
+    color: var(--blue-ibiza-light);
+    font-size: regular;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    text-align: left;
 }
