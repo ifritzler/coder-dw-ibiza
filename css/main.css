@@ -51,6 +51,8 @@ body header {
 }
 main {
     grid-area: main;
+    display: grid;
+    gap: 2rem;
 }
 body footer {
     grid-area: footer;
@@ -261,4 +263,40 @@ body footer {
 
 .social a{
     width: 30px;
+}
+
+/*#################################*/
+/*##########__CONTACTO__###########*/
+
+.contacto {
+    color: var(--blue-ibiza-light);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contacto input,
+.contacto textarea {
+    border: 1px solid var(--blue-ibiza-light);
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: var(--fs-regular);
+    letter-spacing: 1px;
+    color: var(--blue-ibiza-light);
+}
+#formulario_contacto button[type="submit"] {
+    border: none;
+    width: 100%;
+    background-color: #396EB0;
+    color: white;
+    padding: 2rem;
+    font-size: var(--regular);
+    letter-spacing: 1px;
+}
+#formulario_contacto button[type="submit"]:active {
+    background-color: var(--orange-acent);
+    color: white;
 }
