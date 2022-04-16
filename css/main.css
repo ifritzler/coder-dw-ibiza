@@ -300,3 +300,25 @@ body footer {
     background-color: var(--orange-acent);
     color: white;
 }
+
+/*#################################*/
+/*##########__LOCALES__###########*/
+
+.locales {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    color: var(--blue-ibiza-light);
+    gap: 2rem;
+}
+
+.locales__card {
+    background-color: var(--lightblue-ibiza);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
