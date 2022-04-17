@@ -13,142 +13,57 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg p-3">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
+<body class="container-xxl p-0 px-lg-3">
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand mx-3 mx-lg-0" href="#">
+                    <img src="img/assets/icons/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler mx-3 mx-lg-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="me-auto">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/assets/icons/logo.svg">
-                        </a>
-                    </div>
-                    <ul class="navbar-nav me-auto mb-lg-0">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="index.html">Inicio
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="pages/historia.html">Nuestra Historia
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nuestra Historia</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="pages/sabores.html">Sabores
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sabores</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="pages/locales.html">Locales
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nuestros Locales</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="pages/contacto.html">Contacto
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
+                    <div class="canales d-flex mb-3 mb-lg-0">
+                        <a href="#" class="social">
+                            <img src="img/assets/icons/bxl-instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/assets/icons/bxl-facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/assets/icons/bxl-google.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/assets/icons/bx-envelope.svg" alt="">
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/assets/icons/bx-package.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="banner">
-            <img class="banner-logo" src="img/assets/icons/logo.svg" alt="">
-            <div class="banner_box">
-                <p>Somos <span class="text-bold">heladeria artesanal</span>. Somos <span class="text-bold">Ibiza</span>,
-                    y te encanta <span class="text-bold">una bocha.</span></p>
-            </div>
-        </section>
-        <section class="gallery">
-            <div class="gallery_item">
-                <img src="img/assets/galery/one.jpg" alt="Imagen 1 - Joven sirviendo helado a la multitud">
-            </div>
-        </section>
-        <!-- Seccion de marca, aqui se muestra una breve descripcion de la misma-->
-        <section class="brand-info">
-            <div class="box-info">
-                <p>Te invitamos a conocernos.</br>Tenemos una amplia experiencia ofreciendo el mejor <span
-                        class="text-bold">helado artesanal</span>. Más de 30 años nos avalan ofreciendo un producto de
-                    gran <span class="text-bold">calidad y frescura</span>.</br>Explora nuestros <span
-                        class="text-bold">mas de 30 gustos!</span>.</br>Explora <span class="text-bold">Ibiza</span></p>
-            </div>
-            <div class="box-img">
-                <img src="img/assets/ibiza/img_1.jpg" alt="Imagen del logo de ibiza">
-            </div>
-        </section>
-        <section class="promos">
-            <div class="banner_box">
-                <p>Conoce las <span class="text-bold">las promociones</span> que preparamos <span class="text-bold">para
-                        vos</span>.</p>
-            </div>
-            <div class="banner">
-                <div class="promo">
-                    <img src="img/assets/promo-1.png" alt="">
-                </div>
-                <div class="promo">
-                    <img src="img/assets/promo-2.jpg" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <nav class="footer__nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/historia.html">Nuestra Historia</a></li>
-                <li><a href="pages/sabores.html">Sabores</a></li>
-                <li><a href="pages/locales.html">Locales</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <section class="footer__social">
-            <div class="social">
-                <a href="#">
-                    <img src="img/assets/icons/bxl-facebook.svg" alt="Facebook">
-                </a>
-                <a href="#">
-                    <img src="img/assets/icons/bxl-instagram.svg" alt="Instagram">
-                </a>
-                <a href="#">
-                    <img src="img/assets/icons/bxl-google.svg" alt="Google">
-                </a>
-                <a href="#">
-                    <img src="img/assets/icons/bx-envelope.svg" alt="Email">
-                </a>
-                <a href="#">
-                    <img src="img/assets/icons/bx-package.svg" alt="Pedidos YA">
-                </a>
-            </div>
-        </section>
-    </footer>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
