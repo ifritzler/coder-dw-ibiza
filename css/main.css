@@ -17,6 +17,15 @@
     --bold: 700;
     --light: 300;
     --regular: 400;
+
+    --gallery-width: 1100px;  /* Tamaño total de la galleria dinamica*/
+    --gallery-box-full: 500px; /*Tamaño de la imagen en su maximo despliegue*/
+    --gallery-box-tiny: 120px; /* (Tamaño total - Tamaño full despliegue imagen) / (cant-img - 1)*/
+    --gallery-box-default: 183px; /*Tamaño totol de la galeria / cant-img */
+    --gallery-height: 600px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
 }
 /*         
 
@@ -52,9 +61,7 @@
         - Estos mismos estilos los tuve que aplicar con una media query
         ya que de otra manera se solapaban los estilos con los dados en
         la media query "@media (min-width: 992px)"
-
 */
-
 @media (max-width: 991px) {
     .canales,
     .navbar-light .navbar-nav .nav-link {
@@ -67,7 +74,6 @@
         color: white;
     }
 }
-
 /*
     En principio trabaje con las clases asignadas por js cuando el menu se colapsaba
     para poder aplicar mis estilos propios y que se pueda diferir entre la version
@@ -86,10 +92,11 @@
     donde el menu desaparece. En este caso a los 992px el menu aparece y el boton 
     toggle desaparece. Mostrando de esta manera el navbar version desktop.
 */
+
 @media (min-width: 992px) {
     .navbar-collapse .navbar-nav .nav-item .nav-link {
         position: relative;
-        margin: 0 1.4rem;
+        margin: 0 1.3rem;
     }
     .navbar-collapse .navbar-nav .nav-item .nav-link.active,
     .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -135,4 +142,69 @@
     .navbar-collapse .navbar-nav .nav-item .nav-link {
         z-index: 2 !important;
     }
+}
+
+/* 
+
+    Estilos del banner
+
+*/
+.hero-banner {
+    background-image: url(../img/assets/back-white.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-info {
+    color: var(--blue-ibiza);
+    background-color: var(--lightblue-ibiza);
+    opacity: .9;
+    margin: 0 2rem;
+}
+.hero-banner.blue {
+    background-image: url(../img/assets/back.png);
+}
+@media (max-width: 991px) {
+    .brand-logo {
+        display: none;
+    }
+}
+
+
+.gallery {
+    width: var(--gallery-width);
+    height: var(--gallery-height);
+}
+
+.gallery-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--gallery-box-default);
+    height: var(--gallery-height);
+    transition: all 0.2s ease-in-out;
+}
+.gallery:hover .gallery-img {
+    width: var(--gallery-box-tiny);
+}
+.gallery .gallery-img:hover {
+    width: var(--gallery-box-full);
+}
+
+.gallery-img:nth-of-type(1) {
+    background-image: url(../img/assets/galery/four.jpg);
+}
+.gallery-img:nth-of-type(2) {
+    background-image: url(../img/assets/galery/two.jpg);
+}
+.gallery-img:nth-of-type(3) {
+    background-image: url(../img/assets/galery/three.jpg);
+}
+.gallery-img:nth-of-type(4) {
+    background-image: url(../img/assets/galery/one.jpg);
+}
+.gallery-img:nth-of-type(5) {
+    background-image: url(../img/assets/galery/five.jpg);
+}
+.gallery-img:nth-of-type(6) {
+    background-image: url(../img/assets/galery/six.jpg);
 }
