@@ -71,82 +71,48 @@ img {
 
 /*###################################################*/
 /*#################____Menu_____###################*/
-
-.menu {
-    border-bottom: 1px solid var(--lightblue-ibiza);
-}
-#menu__checkbox {
-    display: none;
-}
-.menu__toggle {
-    position: absolute;
-    display: flex;
-    right: 0;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    margin-right: 1rem;
-}
-
-.menu__toggle img {
-    width: 4rem;
-    height: 4rem;
-}
-.menu__toggle--close {
-    display: none;
-}
-.nav__logo {
-    width: 100px;
-}
-.nav__menu li {
-    display: none;
-}
-.nav__menu li a{
-    padding: 2rem;
-}
-/* Mantiene el logo a la izquierda y al ser el 
-primer elemento del nav lo hace visible*/
-.nav__menu li:first-child {
-    margin-right: auto;
-    margin: 1rem;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav__menu a {
-    color: inherit;
-    font-size: 1.8rem;
-    text-decoration: none;
-}
-#menu__checkbox:checked~.nav__menu li{
-    display: block;
-}
-#menu__checkbox:checked~.nav__menu li:first-child{
-    display: flex;
-}
-#menu__checkbox:checked~ label .menu__toggle--close{
-    display: block;
-}
-#menu__checkbox:checked~ label .menu__toggle--open{
-    display: none;
-}
-
-#menu__checkbox:checked~ label .menu__toggle--open{
-    display: none;
-}
-.nav__menu a {
+.navbar-brand {
     display: inline-block;
-    padding: 1rem;
-    width: 100%;
-    text-align: center;
-    background-color: var(--lightblue-ibiza);
+    height: 60px !important;
 }
-.nav__menu a:active, .nav__menu a.active{
-    color: white;
+.navbar-brand img {
+    height: 100%;
+}
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: black !important;
+    box-sizing: border-box !important;
+}
+.nav-link svg {
+    width: 16px; 
+    height: 16px;
+    transition: all .3s ease-in-out;
+}
+.nav-link::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    background-color: var(--lightblue-ibiza);
+    width: 35px;
+    height: 35px;
+    transform: translate(0%,-50%);
+    z-index: -5;
+    border-radius: 1.6rem;
+    transition: all .3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: calc(100% + 10px);
     background-color: var(--orange-acent);
 }
+.nav-link:hover svg {
+    transform: translate(25%, 0%);
+}
+.nav-link:hover{
+    color: white !important;
+}
+
 /*###################################################*/
 /*#################____Banner_____###################*/
 .banner-logo {
@@ -415,77 +381,4 @@ body footer {
     padding: 0 2rem;
     font-size: 1.8rem;
     text-align: left;
-}
-
-/*#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$*/
-/*#$#$#$#$#$#$#$_____media_querys_____#$#$#$#$#$#$#$*/
-
-@media (min-width: 768px) {
-    /*###################################################*/
-    /*#################____Menu_____###################*/
-    .menu__toggle {
-        display: none;
-    }
-    .nav__menu {
-        display: flex;
-        justify-content: center;
-        gap: 45px;
-        align-items: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 1.3rem;
-    }
-    .nav__menu li {
-        display: inline-block;
-        position: relative;
-    }
-    .ball {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: -6px;
-        background-color: var(--lightblue-ibiza);
-        width: 35px;
-        height: 35px;
-        border-radius: 1.6rem;
-        z-index: -5;
-        transition: all .3s cubic-bezier(.5, .6, .7, .9);
-    }
-    .nav__item:hover .ball,
-    .active{
-        width: calc(100% + 35px);
-        border-radius: 1.6rem;
-        background-color: var(--orange-acent);
-    }
-    .active  + a {
-        color: white;
-    }
-    .nav__item:hover a {
-        color: white;
-    }
-
-    .nav__menu a:active, .nav__menu a.active{
-        background-color: transparent;
-    }
-    .arrow {
-        display: inline-block;
-        position: absolute;
-        background-image: url(../img/assets/icons/right-arrow-alt-regular-24.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        top: 1px;
-        right: -25px;
-        width: 35px;
-        height: 35px;
-    }
-    .nav__menu li a{
-        padding: .6rem;
-    }
-    .nav__menu a {
-        font-size: 1.6rem;
-        text-decoration: none;
-        background-color: transparent;
-        display: inline-block;
-        text-align: left;
-    }
 }
