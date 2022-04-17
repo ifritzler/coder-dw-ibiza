@@ -64,6 +64,11 @@ img {
 .text-bold {
     font-weight: bold;
 }
+.ball,
+.arrow {
+    display: none;
+}
+
 /*###################################################*/
 /*#################____Menu_____###################*/
 
@@ -144,7 +149,9 @@ primer elemento del nav lo hace visible*/
 }
 /*###################################################*/
 /*#################____Banner_____###################*/
-
+.banner-logo {
+    display: none;
+}
 .banner {
     background-image: url(../img/assets/back-white.png);
     background-attachment: fixed;
@@ -408,4 +415,77 @@ body footer {
     padding: 0 2rem;
     font-size: 1.8rem;
     text-align: left;
+}
+
+/*#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$#$*/
+/*#$#$#$#$#$#$#$_____media_querys_____#$#$#$#$#$#$#$*/
+
+@media (min-width: 768px) {
+    /*###################################################*/
+    /*#################____Menu_____###################*/
+    .menu__toggle {
+        display: none;
+    }
+    .nav__menu {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.3rem;
+    }
+    .nav__menu li {
+        display: inline-block;
+        position: relative;
+    }
+    .ball {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -6px;
+        background-color: var(--lightblue-ibiza);
+        width: 35px;
+        height: 35px;
+        border-radius: 1.6rem;
+        z-index: -5;
+        transition: all .3s cubic-bezier(.5, .6, .7, .9);
+    }
+    .nav__item:hover .ball,
+    .active{
+        width: calc(100% + 35px);
+        border-radius: 1.6rem;
+        background-color: var(--orange-acent);
+    }
+    .active  + a {
+        color: white;
+    }
+    .nav__item:hover a {
+        color: white;
+    }
+
+    .nav__menu a:active, .nav__menu a.active{
+        background-color: transparent;
+    }
+    .arrow {
+        display: inline-block;
+        position: absolute;
+        background-image: url(../img/assets/icons/right-arrow-alt-regular-24.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        top: 1px;
+        right: -25px;
+        width: 35px;
+        height: 35px;
+    }
+    .nav__menu li a{
+        padding: .6rem;
+    }
+    .nav__menu a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        background-color: transparent;
+        display: inline-block;
+        text-align: left;
+    }
 }
