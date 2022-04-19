@@ -64,7 +64,11 @@ body {
 .navbar-light .navbar-nav .nav-link {
     text-align: center;
 }
-
+body header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
 /*
 
     Estilos de los link de la barra de navegacion en mobile.
