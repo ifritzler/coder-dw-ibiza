@@ -64,11 +64,13 @@ body {
 .navbar-light .navbar-nav .nav-link {
     text-align: center;
 }
+
 body header {
     position: sticky;
     top: 0px;
     z-index: 1000;
 }
+
 /*
 
     Estilos de los link de la barra de navegacion en mobile.
@@ -212,7 +214,7 @@ body header {
 }
 
 .gallery-card {
-    height: 75vmin;    
+    height: 75vmin;
 }
 
 .gallery-card img {
@@ -241,6 +243,11 @@ body header {
 
 .brand {
     font-size: 1.1em;
+    margin-bottom: 3rem;
+    transition: all .3s ease-in-out;
+}
+.brand:hover {
+    box-shadow: -2px 7px 25px 0px #2E4C6Db1;
 }
 
 .brand-img {
@@ -261,10 +268,8 @@ body header {
     background-color: var(--lightblue-ibiza);
 }
 
-@media (max-width: 991px) {
-    .brand.container-md,
-    .brand.container-sm {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.brand.container-md,
+.brand.container-sm {
+    padding-left: 0;
+    padding-right: 0;
 }
