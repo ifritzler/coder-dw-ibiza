@@ -235,3 +235,26 @@ body header {
 .gallery-card:hover img:not(:nth-child(6)) {
     margin-right: 60vmin;
 }
+
+
+.brand {
+    font-size: 1.1em;
+}
+
+.brand-img {
+    padding: 0;
+}
+
+.brand-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--blue-ibiza);
+    background-color: var(--lightblue-ibiza);
+}
