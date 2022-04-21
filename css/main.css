@@ -236,6 +236,8 @@ body header {
     margin-right: 60vmin;
 }
 
+/*###############__- Branding - __###############*/
+/*##############################################*/
 
 .brand {
     font-size: 1.1em;
@@ -257,4 +259,12 @@ body header {
     justify-content: center;
     color: var(--blue-ibiza);
     background-color: var(--lightblue-ibiza);
+}
+
+@media (max-width: 991px) {
+    .brand.container-md,
+    .brand.container-sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
