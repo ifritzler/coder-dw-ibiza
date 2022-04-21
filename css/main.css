@@ -179,6 +179,7 @@ body header {
     background-image: url(../img/assets/back-white.png);
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero-info {
@@ -272,4 +273,37 @@ body header {
 .brand.container-sm {
     padding-left: 0;
     padding-right: 0;
+}
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.promo {
+    min-width: 300px;
+    min-height: 300px;
+    order: 2;
+}
+.promo-info {
+    order: 1;
+}
+.promo img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .promo-section {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 991px) {
+    .promo-info {
+        order: 2;
+    }
+    .promo {
+        order: 1;
+    }
 }
