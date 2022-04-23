@@ -1,0 +1,293 @@
+/*------GENERAL------*/
+/* VARIABLES - COLORES*/
+body {
+  font-family: "Montserrat", sans-serif; }
+
+h2 {
+  color: #2E4C6D; }
+
+/*------NAVBAR------*/
+body header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000; }
+
+.canales {
+  justify-content: center;
+  gap: .4rem; }
+  .canales .social {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  @media (max-width: 991px) {
+    .canales {
+      background-color: #DADDFC;
+      padding: 1rem 0;
+      font-weight: bold; } }
+
+.navbar-brand {
+  display: inline-block;
+  height: 60px; }
+  .navbar-brand img {
+    height: 100%;
+    padding: .2rem; }
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-align: center; }
+  .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+    color: white; }
+  @media (max-width: 991px) {
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+      background-color: #DADDFC;
+      padding: 1rem 0;
+      font-weight: bold; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+        background-color: #FC997C; } }
+  @media (min-width: 992px) {
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+      z-index: 2 !important;
+      position: relative;
+      margin: 0 1.2rem; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active, .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: white; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active::before, .navbar-collapse .navbar-nav .nav-item .nav-link::before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        background-color: #DADDFC;
+        width: 35px;
+        height: 35px;
+        transform: translate(0%, -50%);
+        z-index: -1;
+        border-radius: 1.6rem; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active::after, .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+        content: " ";
+        background-image: url(../img/assets/icons/arrow-right.svg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 16px;
+        height: 16px;
+        transform: translate(60%, 83%);
+        transition: all .3s ease-in-out; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active::before, .navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
+        width: calc(100% + 30px);
+        transition: all .3s ease-in-out;
+        background-color: #FC997C; }
+      .navbar-collapse .navbar-nav .nav-item .nav-link.active::after, .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+        transform: translate(80%, 83%); } }
+
+/*------HERO------*/
+.hero-banner {
+  background-image: url(../img/assets/back-white.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .hero-banner .hero-info {
+    color: #2E4C6D;
+    background-color: #DADDFC;
+    opacity: .9;
+    margin: 0 2rem; }
+  @media (max-width: 991px) {
+    .hero-banner .brand-logo {
+      display: none; } }
+
+.hero-banner.blue {
+  background-image: url(../img/assets/back.png); }
+
+/*------GALLERY------*/
+/*###############__- Gallery - __###############*/
+/*##############################################*/
+.gallery.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Esto es un 10% del menor viewport (horizontal o vertical)*/
+  margin: 10vmin auto;
+  overflow: hidden;
+  gap: .6rem; }
+  .gallery.container .gallery-card {
+    height: 75vmin; }
+    .gallery.container .gallery-card img {
+      flex: 1;
+      transition: all 1s ease-in-out;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%); }
+    .gallery.container .gallery-card:hover {
+      flex-grow: 10; }
+      .gallery.container .gallery-card:hover img {
+        filter: grayscale(25%); }
+        .gallery.container .gallery-card:hover img:not(:nth-child(6)) {
+          margin-right: 60vmin; }
+
+/*------BRANDING------*/
+/*###############__- Branding - __###############*/
+/*##############################################*/
+.brand.container-md,
+.brand.container-sm {
+  padding-left: 0;
+  padding-right: 0; }
+
+.brand {
+  font-size: 1.1em;
+  margin-bottom: 3rem;
+  transition: all .3s ease-in-out; }
+  .brand:hover {
+    box-shadow: -2px 7px 25px 0px #2E4C6Db1; }
+  .brand .brand-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .brand .brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2E4C6D;
+    background-color: #DADDFC; }
+
+/*------PROMOS------*/
+/*###############__- Promo - __###############*/
+/*##############################################*/
+.promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem; }
+  @media (min-width: 992px) {
+    .promo-section {
+      flex-direction: row; } }
+  .promo-section .promo {
+    min-width: 300px;
+    min-height: 300px;
+    order: 2;
+    order: 2; }
+    .promo-section .promo img {
+      width: 100%; }
+  .promo-section .promo-info {
+    order: 1; }
+
+/*------FOOTER------*/
+.footer {
+  height: 15vh;
+  background-color: #2E4C6D;
+  color: white;
+  text-align: center;
+  padding: 2rem; }
+
+/*------HISTORIA------*/
+.historia video,
+.historia .info {
+  color: #396EB0;
+  width: Min(80%, 400px);
+  height: auto; }
+
+.historia .info {
+  padding: 2rem; }
+
+.historia article {
+  gap: 2rem;
+  padding: 2rem 0; }
+
+/*------LOCALES------*/
+.locales__card,
+.locales__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.locales__card {
+  width: Min(80%, 300px);
+  height: auto;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #DADDFC;
+  box-shadow: 0 0 10px 0.25rem rgba(0, 0, 0, 0.25);
+  transition: all .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .locales__card:hover {
+    transform: scale(1.11); }
+  .locales__card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center; }
+  .locales__card .locales__button {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto 1rem;
+    background-color: #FC997C;
+    color: white;
+    font-size: 1.1rem;
+    padding: .7rem;
+    text-decoration: none; }
+
+/*------SABORES------*/
+.sabores .gustos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  font-size: 16px; }
+  @media (max-width: 992px) {
+    .sabores .gustos {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 400px) {
+    .sabores .gustos {
+      grid-template-columns: 1fr; } }
+  .sabores .gustos .sabores__gusto {
+    width: Min(350px, 90%);
+    min-height: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px #000000;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px 0.25rem rgba(0, 0, 0, 0.25);
+    transition: all .3s ease-in-out; }
+    .sabores .gustos .sabores__gusto:hover {
+      transform: scale(1.1); }
+    .sabores .gustos .sabores__gusto h3 {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .sabores .gustos .sabores__gusto:nth-of-type(1) {
+      background-image: url(../img/assets/gustos/americana.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(2) {
+      background-image: url(../img/assets/gustos/banana_split.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(3) {
+      background-image: url(../img/assets/gustos/cereza.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(4) {
+      background-image: url(../img/assets/gustos/choco-block.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(5) {
+      background-image: url(../img/assets/gustos/choco-pasas.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(6) {
+      background-image: url(../img/assets/gustos/dulce-leche-merengue.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(7) {
+      background-image: url(../img/assets/gustos/frambuesa.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(8) {
+      background-image: url(../img/assets/gustos/frutilla.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(9) {
+      background-image: url(../img/assets/gustos/granizado.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(10) {
+      background-image: url(../img/assets/gustos/maracuya.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(11) {
+      background-image: url(../img/assets/gustos/menta_granizada.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(12) {
+      background-image: url(../img/assets/gustos/mouse_limon.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(13) {
+      background-image: url(../img/assets/gustos/sambayon.jpg); }
+    .sabores .gustos .sabores__gusto:nth-of-type(14) {
+      background-image: url(../img/assets/gustos/vainilla.jpg); }

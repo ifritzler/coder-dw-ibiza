@@ -1,0 +1,30 @@
+/*###############__- Promo - __###############*/
+/*##############################################*/
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+
+    .promo {
+        min-width: 300px;
+        min-height: 300px;
+        order: 2;
+
+        img {
+            width: 100%;
+        }
+
+        order: 2;
+
+    }
+
+    .promo-info {
+        order: 1;
+    }
+}

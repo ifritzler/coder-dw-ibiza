@@ -1,0 +1,16 @@
+.historia video,
+.historia .info {
+    color: $blue-ibiza-light;
+    width: Min(80%, 400px);
+    height: auto;
+}
+.historia {
+    .info {
+        padding: 2rem;
+        
+    }
+    article {
+        gap: 2rem;
+        padding: 2rem 0;
+    }    
+}

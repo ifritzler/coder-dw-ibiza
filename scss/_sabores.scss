@@ -1,0 +1,98 @@
+.sabores .gustos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    font-size: 16px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 400px) {
+        grid-template-columns: 1fr;
+    }
+
+    .sabores__gusto {
+        width: Min(350px, 90%);
+        min-height: 100px;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 10px #000000;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 10px 0.25rem rgba(0, 0, 0, 0.25);
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &:nth-of-type(1) {
+            background-image: url(../img/assets/gustos/americana.jpg);
+        }
+
+        &:nth-of-type(2) {
+            background-image: url(../img/assets/gustos/banana_split.jpg);
+        }
+
+        &:nth-of-type(3) {
+            background-image: url(../img/assets/gustos/cereza.jpg);
+        }
+
+        &:nth-of-type(4) {
+            background-image: url(../img/assets/gustos/choco-block.jpg);
+        }
+
+        &:nth-of-type(5) {
+            background-image: url(../img/assets/gustos/choco-pasas.jpg);
+        }
+
+        &:nth-of-type(6) {
+            background-image: url(../img/assets/gustos/dulce-leche-merengue.jpg);
+        }
+
+        &:nth-of-type(7) {
+            background-image: url(../img/assets/gustos/frambuesa.jpg);
+        }
+
+        &:nth-of-type(8) {
+            background-image: url(../img/assets/gustos/frutilla.jpg);
+        }
+
+        &:nth-of-type(9) {
+            background-image: url(../img/assets/gustos/granizado.jpg);
+        }
+
+        &:nth-of-type(10) {
+            background-image: url(../img/assets/gustos/maracuya.jpg);
+        }
+
+        &:nth-of-type(11) {
+            background-image: url(../img/assets/gustos/menta_granizada.jpg);
+        }
+
+        &:nth-of-type(12) {
+            background-image: url(../img/assets/gustos/mouse_limon.jpg);
+        }
+
+        &:nth-of-type(13) {
+            background-image: url(../img/assets/gustos/sambayon.jpg);
+        }
+
+        &:nth-of-type(14) {
+            background-image: url(../img/assets/gustos/vainilla.jpg);
+        }
+    }
+
+}

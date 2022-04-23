@@ -1,0 +1,87 @@
+body header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.canales {
+    justify-content: center;
+    gap: .4rem;
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        background-color: $lightblue-ibiza;
+        padding: 1rem 0;
+        font-weight: bold;
+    }
+}
+.navbar-brand {
+    display: inline-block;
+    height: 60px;
+    img {
+        height: 100%;
+        padding: .2rem;
+    }
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    &.active{
+        color: white;
+    }
+    @media (max-width: 991px) {
+        background-color: $lightblue-ibiza;
+        padding: 1rem 0;
+        font-weight: bold;
+        &.active {
+            background-color: $orange-acent;
+        }
+    }
+    @media (min-width: 992px){
+        z-index: 2 !important;
+        position: relative;
+        margin: 0 1.2rem;
+        &.active,
+        &:hover {
+            color: white;
+        }
+        &.active::before,
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: -5px;
+            background-color: $lightblue-ibiza;
+            width: 35px;
+            height: 35px;
+            transform: translate(0%, -50%);
+            z-index: -1;
+            border-radius: 1.6rem;
+        }
+        &.active::after,
+        &::after {
+            content: " ";
+            background-image: url(../img/assets/icons/arrow-right.svg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 16px;
+            height: 16px;
+            transform: translate(60%, 83%);
+            transition: all .3s ease-in-out;
+        }
+        &.active::before,
+        &:hover::before{
+            width: calc(100% + 30px);
+            transition: all .3s ease-in-out;
+            background-color: $orange-acent;
+        }
+        &.active::after,
+        &:hover::after {
+            transform: translate(80%, 83%);
+        }
+    }
+}

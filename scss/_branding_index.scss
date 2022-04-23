@@ -1,0 +1,32 @@
+/*###############__- Branding - __###############*/
+/*##############################################*/
+.brand.container-md,
+.brand.container-sm {
+    padding-left: 0;
+    padding-right: 0;
+}
+.brand {
+    font-size: 1.1em;
+    margin-bottom: 3rem;
+    transition: all .3s ease-in-out;
+    &:hover {
+        box-shadow: -2px 7px 25px 0px #2E4C6Db1;
+    }
+    .brand-img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .brand-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $blue-ibiza;
+        background-color: $lightblue-ibiza;
+    }
+}
+
+
+
