@@ -317,3 +317,18 @@ body header {
     text-align: center;
     padding: 2rem;
 }
+
+.historia video,
+.historia .info {
+    color: var(--blue-ibiza-light);
+    width: min(80%, 400px);
+    height: auto;
+}
+.historia .info {
+    padding: 2rem;
+    
+}
+.historia article {
+    gap: 2rem;
+    padding: 2rem 0;
+}
