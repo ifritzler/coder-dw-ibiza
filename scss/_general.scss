@@ -1,12 +1,7 @@
-$blue-ibiza: #2E4C6D;
-$orange-acent: #FC997C;
-$blue-ibiza-light: #396EB0;
-$lightblue-ibiza: #DADDFC;
-
-
+@import 'colores';
 body {
 font-family: "Montserrat", sans-serif;
 }
 h2 {
-color: $blue-ibiza;
+color: map-get($map: $colores, $key: blue-ibiza);
 }

@@ -1,6 +1,6 @@
 .footer {
     height: 15vh;
-    background-color: $blue-ibiza;
+    background-color: map-get($map: $colores, $key: blue-ibiza);
     color: white;
     text-align: center;
     padding: 2rem;

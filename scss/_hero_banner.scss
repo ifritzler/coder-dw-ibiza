@@ -4,8 +4,8 @@
     background-attachment: fixed;
     background-size: cover;
     .hero-info {
-        color: $blue-ibiza;
-        background-color: $lightblue-ibiza;
+        color: map-get($map: $colores, $key: blue-ibiza);
+        background-color: map-get($map: $colores, $key: lightblue-ibiza);
         opacity: .9;
         margin: 0 2rem;
     }

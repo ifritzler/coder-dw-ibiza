@@ -1,6 +1,6 @@
 .historia video,
 .historia .info {
-    color: $blue-ibiza-light;
+    color: map-get($map: $colores, $key: lightblue-ibiza);
     width: Min(80%, 400px);
     height: auto;
 }
