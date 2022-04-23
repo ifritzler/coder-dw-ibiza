@@ -210,7 +210,6 @@ body header {
     /*Esto es un 10% del menor viewport (horizontal o vertical)*/
     margin: 10vmin auto;
     overflow: hidden;
-    transform: skew(5deg);
     gap: .6rem;
 }
 
@@ -274,6 +273,8 @@ body header {
     padding-left: 0;
     padding-right: 0;
 }
+/*###############__- Promo - __###############*/
+/*##############################################*/
 .promo-section {
     display: flex;
     justify-content: center;
@@ -306,4 +307,13 @@ body header {
     .promo {
         order: 1;
     }
+}
+/*###############__- Footer - __###############*/
+/*##############################################*/
+.footer {
+    height: 15vh;
+    background-color: var(--blue-ibiza);
+    color: white;
+    text-align: center;
+    padding: 2rem;
 }
