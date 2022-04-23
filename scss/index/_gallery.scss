@@ -1,11 +1,8 @@
 .gallery.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-mixin(row, center, center, .6rem);
     /*Esto es un 10% del menor viewport (horizontal o vertical)*/
     margin: 10vmin auto;
     overflow: hidden;
-    gap: .6rem;
     .gallery-card {
         height: 75vmin;
         img {

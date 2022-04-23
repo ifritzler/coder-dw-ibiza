@@ -1,10 +1,5 @@
 .promo-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-
+    @include flex-mixin(column, center, center, 1rem);
     @media (min-width: 992px) {
         flex-direction: row;
     }
