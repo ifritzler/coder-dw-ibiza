@@ -1,5 +1,4 @@
 /*------GENERAL------*/
-/* VARIABLES - COLORES*/
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -99,8 +98,6 @@ body header {
   background-image: url(../img/assets/back.png); }
 
 /*------GALLERY------*/
-/*###############__- Gallery - __###############*/
-/*##############################################*/
 .gallery.container {
   display: flex;
   justify-content: center;
@@ -126,8 +123,6 @@ body header {
           margin-right: 60vmin; }
 
 /*------BRANDING------*/
-/*###############__- Branding - __###############*/
-/*##############################################*/
 .brand.container-md,
 .brand.container-sm {
   padding-left: 0;
@@ -151,8 +146,6 @@ body header {
     background-color: #DADDFC; }
 
 /*------PROMOS------*/
-/*###############__- Promo - __###############*/
-/*##############################################*/
 .promo-section {
   display: flex;
   justify-content: center;
