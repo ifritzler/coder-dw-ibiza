@@ -53,7 +53,8 @@
                         <a href="https://www.google.com.ar/search?q=helados+ibiza" target="_blank" class="social">
                             <img src="../img/assets/icons/bxl-google.svg" alt="">
                         </a>
-                        <a href="https://www.pedidosya.com.ar/restaurantes/mar-del-plata/heladeria-ibiza-alvarado-menu" target="_blank" class="social">
+                        <a href="https://www.pedidosya.com.ar/restaurantes/mar-del-plata/heladeria-ibiza-alvarado-menu"
+                            target="_blank" class="social">
                             <img src="../img/assets/icons/bx-package.svg" alt="">
                         </a>
                     </div>
@@ -62,20 +63,41 @@
         </nav>
     </header>
     <main>
-        <section class="banner blue">
-            <div class="banner_box">
-                <p>Nos <span class="text-bold">acercamos a vos</span> para estar mas en <span
-                        class="text-bold">contacto</span> que nunca!</p>
+        <section class="hero-banner position-relative overflow-hidden 
+                p-3 p-md-5 
+                m-0 m-xxl-3 
+                text-center bg-light d-flex align-items-center">
+            <div class="brand-logo col-lg-6 user-select-none">
+                <img src="../img/assets/icons/logo.svg" alt="Logo Ibiza">
+            </div>
+            <div class="hero-info 
+                    col-sm-10 col-md-10 col-lg-6 
+                    me-lg-5 my-2 mx-auto 
+                    p-5">
+                <h1 class="display-6 fw-normal user-select-none">Nos acercamos <span class="fw-bold">a vos </span> para
+                    estar mas en <span class="fw-bold">contacto</span> que nunca!</h1>
             </div>
         </section>
-        <section class="contacto">
-            <h1 class="text-bold">Contactanos</h1>
-            <p>Para contactarnos podes enviar un email a info@heladosibiza.com.ar o completar el siguiente formulario.</p>
-            <form action="POST" id="formulario_contacto">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button type="submit">Enviar</button>
+        <section class="contacto container">
+            <h2 class="fw-bold text-center my-4">Contactanos</h2>
+            <p>Para contactarnos podes enviar un email a info@heladosibiza.com.ar o completar el siguiente formulario.
+            </p>
+            <p>Podes tambien sumar como archivo adjunto tu CV y probar de ser parte nuestra familia.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No vamos a compartir tu mail con nadie más.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputMessage1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleInputMessage1"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="inputFile5" class="form-label">CV</label>
+                    <input type="file" id="inputFile5" class="form-control" aria-describedby="FileHelpBlock">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
             </form>
         </section>
         <section class="promo-section hero-banner position-relative overflow-hidden 

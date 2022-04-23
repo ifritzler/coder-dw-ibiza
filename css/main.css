@@ -317,7 +317,8 @@ body header {
     text-align: center;
     padding: 2rem;
 }
-
+/*###############__- Historia - __###############*/
+/*##############################################*/
 .historia video,
 .historia .info {
     color: var(--blue-ibiza-light);
@@ -331,4 +332,8 @@ body header {
 .historia article {
     gap: 2rem;
     padding: 2rem 0;
+}
+
+.contacto h2 {
+    color: var(--blue-ibiza);
 }
