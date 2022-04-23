@@ -80,22 +80,22 @@ body header {
         transform: translate(80%, 83%); } }
 
 /*------HERO------*/
-.hero-banner {
-  background-image: url(../img/assets/back-white.png);
+.hero-banner, .hero-banner--white {
+  background-image: url(../img/assets/back.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover; }
-  .hero-banner .hero-info {
+
+.hero-banner--white {
+  background-image: url(../img/assets/back-white.png); }
+  .hero-banner--white .hero-info {
     color: #2E4C6D;
     background-color: #DADDFC;
     opacity: .9;
     margin: 0 2rem; }
   @media (max-width: 991px) {
-    .hero-banner .brand-logo {
+    .hero-banner--white .brand-logo {
       display: none; } }
-
-.hero-banner.blue {
-  background-image: url(../img/assets/back.png); }
 
 /*------GALLERY------*/
 .gallery.container {

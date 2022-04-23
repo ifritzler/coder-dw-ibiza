@@ -1,8 +1,13 @@
 .hero-banner {
-    background-image: url(../img/assets/back-white.png);
+    background-image: url(../img/assets/back.png);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.hero-banner--white {
+    @extend .hero-banner;
+    background-image: url(../img/assets/back-white.png);
     .hero-info {
         color: map-get($map: $colores, $key: blue-ibiza);
         background-color: map-get($map: $colores, $key: lightblue-ibiza);
@@ -15,6 +20,4 @@
         }
     }
 }
-.hero-banner.blue {
-    background-image: url(../img/assets/back.png);
-}
+
