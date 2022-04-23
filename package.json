@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/ifritzler/coder-dw-ibiza.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Heladeria", "html", "sass", "bootstrap", "desarrollo web"],
+  "author": "Fritzler Ilan Emanuel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ifritzler/coder-dw-ibiza/issues"
