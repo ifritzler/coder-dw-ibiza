@@ -14,67 +14,52 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg p-3">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-0 px-lg-3 px-xxl-5 ">
+                <a class="navbar-brand mx-3 mx-lg-0" href="#">
+                    <img src="../img/assets/icons/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler mx-3 mx-lg-0 collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="me-auto">
-                        <a class="navbar-brand" href="#">
-                            <img src="../img/assets/icons/logo.svg">
-                        </a>
-                    </div>
-                    <ul class="navbar-nav me-auto mb-lg-0">
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="../index.html">Inicio
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="../pages/historia.html">Nuestra Historia
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historia.html">Nuestra Historia</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="../pages/sabores.html">Sabores
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sabores.html">Sabores</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="../pages/locales.html">Locales
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/locales.html">Nuestros Locales</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="../pages/contacto.html">Contacto
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
+                    <div class="canales d-flex mb-3 mb-lg-0">
+                        <a href="https://www.instagram.com/heladosibiza/" target="_blank" class="social">
+                            <img src="img/assets/icons/bxl-instagram.svg" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/heladosibiza/" target="_blank" class="social">
+                            <img src="img/assets/icons/bxl-facebook.svg" alt="">
+                        </a>
+                        <a href="https://www.google.com.ar/search?q=helados+ibiza" target="_blank" class="social">
+                            <img src="img/assets/icons/bxl-google.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="social">
+                            <img src="img/assets/icons/bx-envelope.svg" alt="">
+                        </a>
+                        <a href="https://www.pedidosya.com.ar/restaurantes/mar-del-plata/heladeria-ibiza-alvarado-menu" target="_blank" class="social">
+                            <img src="img/assets/icons/bx-package.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -96,50 +81,33 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
-        <section class="promos">
-            <div class="banner_box">
-                <p>Conoce las <span class="text-bold">las promociones</span> que preparamos <span class="text-bold">para
-                        vos</span>.</p>
+        <section class="promo-section hero-banner position-relative overflow-hidden 
+                p-3 p-md-5 
+                m-0 m-xxl-3 
+                text-center bg-light d-flex align-items-center">
+            <div class="promo
+                    col-12 col-lg-3
+                    user-select-none">
+                <img src="../img/assets/promo-1.png" alt="Logo Ibiza">
             </div>
-            <div class="banner">
-                <div class="promo">
-                    <img src="../img/assets/promo-1.png" alt="">
-                </div>
-                <div class="promo">
-                    <img src="../img/assets/promo-2.jpg" alt="">
-                </div>
+            <div class="promo 
+                    col-12 col-lg-3
+                    user-select-none">
+                <img src="../img/assets/promo-2.jpg" alt="Logo Ibiza">
+            </div>
+            <div class="hero-info 
+                    col-12 col-lg-6
+                    my-2 mx-auto 
+                    p-5">
+                <h2 class="display-7 fw-normal user-select-none">Conoce las <span class="fw-bold">promociones</span> que
+                    tenemos
+                    <span class="fw-bold">para vos.</span>
+                </h2>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <nav class="footer__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="historia.html">Nuestra Historia</a></li>
-                <li><a href="sabores.html">Sabores</a></li>
-                <li><a href="locales.html">Locales</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <section class="footer__social">
-            <div class="social">
-                <a href="#">
-                    <img src="../img/assets/icons/bxl-facebook.svg" alt="Facebook">
-                </a>
-                <a href="#">
-                    <img src="../img/assets/icons/bxl-instagram.svg" alt="Instagram">
-                </a>
-                <a href="#">
-                    <img src="../img/assets/icons/bxl-google.svg" alt="Google">
-                </a>
-                <a href="#">
-                    <img src="../img/assets/icons/bx-envelope.svg" alt="Email">
-                </a>
-                <a href="#">
-                    <img src="../img/assets/icons/bx-package.svg" alt="Pedidos YA">
-                </a>
-            </div>
-        </section>
+    <footer class="footer d-flex justify-content-center align-items-center">
+        <p>© Todos los derechos reservados - Fritzler Ilan Emanuel 2022</p>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
 </body>
