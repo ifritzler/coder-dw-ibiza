@@ -1,13 +1,12 @@
 .historia video,
 .historia .info {
-    color: map-get($map: $colores, $key: lightblue-ibiza);
+    color: map-get($map: $colores, $key: blue-ibiza);
     width: Min(80%, 400px);
     height: auto;
 }
 .historia {
     .info {
         padding: 2rem;
-        
     }
     article {
         gap: 2rem;
